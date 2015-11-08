@@ -30,7 +30,7 @@ public class humanAnimationScript : MonoBehaviour {
         Debug.Log("distance: " + Vector3.Distance(robotCurrPos, cSteering.Quarry.transform.position));
         
 
-        if (Vector3.Distance(robotCurrPos, cSteering.Quarry.transform.position) < cSteering.AcceptableDistance + 3) {
+        if (Vector3.Distance(robotCurrPos, cSteering.Quarry.transform.position) < cSteering.AcceptableDistance + 4) {
 			cSteering.enabled = false;
 			animator.SetInteger("speed", 0);
         }
